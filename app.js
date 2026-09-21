@@ -20,18 +20,14 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-firestore.js";
 import { bucketKeyFor, findGroupByBucketKey, groupDisplayName } from "./group-utils.js";
 
-// --- Firebase config (dedicated project) ---
-// TODO: replace with the SA family's own Firebase project config
-// (Project settings > General > Your apps > web app). This is a
-// placeholder, not a real project — the app won't connect until
-// this is filled in.
+// --- Firebase config (dedicated project for the SA family) ---
 const firebaseConfig = {
-    apiKey:            "REPLACE_ME",
-    authDomain:        "REPLACE_ME.firebaseapp.com",
-    projectId:         "REPLACE_ME",
-    storageBucket:     "REPLACE_ME.firebasestorage.app",
-    messagingSenderId: "REPLACE_ME",
-    appId:             "REPLACE_ME"
+    apiKey:            "AIzaSyDUfe5PYbVLYUD1J2sND0FoSImmOhOeJ8o",
+    authDomain:        "ticket-to-ride-tracker-sa.firebaseapp.com",
+    projectId:         "ticket-to-ride-tracker-sa",
+    storageBucket:     "ticket-to-ride-tracker-sa.firebasestorage.app",
+    messagingSenderId: "420501831493",
+    appId:             "1:420501831493:web:3a5efac833dba706fd882c"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);

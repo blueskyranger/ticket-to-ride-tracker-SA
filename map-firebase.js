@@ -13,15 +13,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-firestore.js";
 import { bucketKeyFor, findGroupByBucketKey } from "./group-utils.js";
 
-// TODO: replace with the SA family's own Firebase project config —
-// must match app.js exactly (same Firebase project).
 const firebaseConfig = {
-    apiKey:            "REPLACE_ME",
-    authDomain:        "REPLACE_ME.firebaseapp.com",
-    projectId:         "REPLACE_ME",
-    storageBucket:     "REPLACE_ME.firebasestorage.app",
-    messagingSenderId: "REPLACE_ME",
-    appId:             "REPLACE_ME"
+    apiKey:            "AIzaSyDUfe5PYbVLYUD1J2sND0FoSImmOhOeJ8o",
+    authDomain:        "ticket-to-ride-tracker-sa.firebaseapp.com",
+    projectId:         "ticket-to-ride-tracker-sa",
+    storageBucket:     "ticket-to-ride-tracker-sa.firebasestorage.app",
+    messagingSenderId: "420501831493",
+    appId:             "1:420501831493:web:3a5efac833dba706fd882c"
 };
 
 const firebaseApp = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
